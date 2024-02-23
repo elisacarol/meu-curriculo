@@ -1,0 +1,12 @@
+
+
+body {   
+    width: 90vw;/*vw: viewport width*/
+    margin:auto;/*criar margem automátiva*/
+    front-size: 20px;/*o padrão é 16px*/
+}
+
+section {
+    background-color:lightgray;
+    padding:40px;
+}
