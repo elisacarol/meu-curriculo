@@ -1,12 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap')
 
 body {   
     width: 90vw;/*vw: viewport width*/
     margin:auto;/*criar margem automátiva*/
-    front-size: 20px;/*o padrão é 16px*/
+    font-size: 20px;/*o padrão é 16px*/
+    font-family: "Architects+Daughter&family"/
+        font-weight:20px/
 }
 
+.meu-curriculo {
+    font-family: "Architects+Daugters&Family",sans-serif;
+    font-size:3rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    margin-left:2rem;
+
+}
+
+    font-family
+
 section {
-    background-color:lightgray;
     padding:40px;
+} 
+
+section#apresentacao {
+    background-color: lightsalmon;
+}
+
+section#formacao-academica {
+    background-color: lightgoldenrodyellow;
+}
+
+section#experiencia-profissional {
+    background-color: lightblue
+}
+
+section#hard-skills {
+    background-color: lavenderblush;
+}
+
+section#idiomas {
+    background-color: antiquewhite;
+}
+
+section#soft-skills {
+    background-color: bisque;    
+}
+
+section#informacoes-complementares {
+    background-color: blanchedalmond;
+}
+    
+
+.titulo-secao{
+    text-transform: uppercase;/*transformar o texto em maisculo*/
+    font-family: "Overpass", sans-serif;
+    color:darkorchid;
 }
