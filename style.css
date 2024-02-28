@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap')
 
+:root {
+    font-size: 16px;/*tamanho base do rm - 1 rem = 16px*/
+}
 body {   
-    width: 90vw;/*vw: viewport width*/
+    width: 80vw;/*vw: viewport width*/
     margin:auto;/*criar margem automátiva*/
     font-size: 20px;/*o padrão é 16px*/
-    font-family: "Architects+Daughter&family"/
-        font-weight:20px/
+    font-family: "Architects+Daughter&family", sans-serif;
+    font-weight:20px;
 }
 
 .meu-curriculo {
-    font-family: "Architects+Daugters&Family",sans-serif;
+    font-family: "Overpass",sans-serif;
     font-size:3rem;
     margin-top: 2rem;
     margin-right: 2rem;
@@ -20,8 +22,6 @@ body {
     margin-left:2rem;
 
 }
-
-    font-family
 
 section {
     padding:40px;
@@ -54,10 +54,17 @@ section#soft-skills {
 section#informacoes-complementares {
     background-color: blanchedalmond;
 }
-    
-
+  
 .titulo-secao{
-    text-transform: uppercase;/*transformar o texto em maisculo*/
+    text-transform: uppercase; /*transformar o texto em maisculo*/
     font-family: "Overpass", sans-serif;
     color:darkorchid;
+    font-size: 2rem;
+    margin: 1rem 0 1rem 0; /*sequencia margens top right bottom left*/
+    padding: 1rem;
+    border: 1rem;
+}
+
+p{
+    line-height: 1.5;/*altura da linha 1.5 do tamanho padrão*/
 }
