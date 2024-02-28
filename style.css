@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     font-size: 16px;/*tamanho base do rm - 1 rem = 16px*/
 }
+
 body {   
     width: 80vw;/*vw: viewport width*/
     margin:auto;/*criar margem automátiva*/
@@ -39,24 +40,24 @@ section#experiencia-profissional {
     background-color: lightblue
 }
 
-section#hard-skills {
-    background-color: lavenderblush;
+section#Hard-Skills {
+    background-color: pink;
 }
 
-section#idiomas {
-    background-color: antiquewhite;
+section#Idiomas {
+    background-color: aqua;
 }
 
-section#soft-skills {
-    background-color: bisque;    
+section#Soft-Skills {
+    background-color: burlywood;    
 }
 
-section#informacoes-complementares {
+section#Informacoes-Complementares {
     background-color: blanchedalmond;
 }
   
 .titulo-secao{
-    text-transform: uppercase; /*transformar o texto em maisculo*/
+    text-transform: uppercase; /*transformar o texto em maiusculo*/
     font-family: "Overpass", sans-serif;
     color:darkorchid;
     font-size: 2rem;
@@ -66,5 +67,21 @@ section#informacoes-complementares {
 }
 
 p{
-    line-height: 1.5;/*altura da linha 1.5 do tamanho padrão*/
+    line-height: 1.5;/*altura/ da linha 1.5 do tamanho padrão*/
+    margin: 1rem 0; /*valores: cima traço _ e emcima traço a direita*/
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: upercase;
+    margin: 1rem 0;
+    text-shadow: 2px 2px 2px grey; /*deslocamento x deslocamento y espalhamento cor*/
+
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1rem 0;
 }
