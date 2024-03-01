@@ -1,9 +1,28 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
+/*Alguns valores de propriedade nao tem valores de medida .
+exemplo: line-height, aspecto-ratio, font-weight*/
+
+
+* { /* "*" -> todos os elementos aplicáveis*/
+    margin:0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box}
+    /*box-sizing como o css calcula o tamanho dos elementos*/
+    /*display:block; faz com que os elementos se comportem como "blocos cheios, ocupando
+    100% da alrgura disponivel do elemento pai*/
+    /* elementos tem display: inline (a, ing, span)*/
+    /*list-style: none; estilo da lita (marcadores); nenhum*/
+    /*blockquote quote: none; marcas de citação: nenhuma*/
+    
+
+:root { /* root -> todos os elementos raiz (HTML), mais alta hierarquia*/
     font-size: 16px;/*tamanho base do rm - 1 rem = 16px*/
+    scroll-behavior: smooth;/*comportamento de rolagem: suave*/
 }
 
 body {   
@@ -13,6 +32,7 @@ body {
     font-family: "Architects+Daughter&family", sans-serif;
     font-weight:20px;
 }
+
 
 .meu-curriculo {
     font-family: "Overpass",sans-serif;
@@ -53,9 +73,36 @@ section#Soft-Skills {
 }
 
 section#Informacoes-Complementares {
-    background-color: blanchedalmond;
+    background-color: /blanchedalmond;
 }
-  
+
+section#teconologias {
+    display: flex;/*exibe como caixa flexivel (Flexbox)*/
+    /*Flexbox tem várias atividades que propriedades que trabalham junto*/
+    /*display: flex -> sempre aplicado no  elemento PAI (container)*/
+    justify-content:space-evenly;/*alinha o conteudo no eixo principal*/
+}
+
+/*Combinadores*/ 
+
+article h1 {/* h1 descendente de article */
+    font-size: 2rem;
+    font-weight: bold; /* bold= 700 */
+}
+
+article h2 {/* h2 descendente de article */
+    font-size: 1.5rem;
+    font-weight: 600; /*demi-b0ld (quase negrito)*/
+}
+
+article p {
+    text-align: justify;
+}
+
+article {
+    width: 30%;/* 30% do PAI (section id=*tecnologias*)*/
+}
+
 .titulo-secao{
     text-transform: uppercase; /*transformar o texto em maiusculo*/
     font-family: "Overpass", sans-serif;
@@ -66,7 +113,7 @@ section#Informacoes-Complementares {
     border: 1rem;
 }
 
-p{
+{
     line-height: 1.5;/*altura/ da linha 1.5 do tamanho padrão*/
     margin: 1rem 0; /*valores: cima traço _ e emcima traço a direita*/
 }
@@ -85,3 +132,34 @@ h1{
     font-weight: 300;
     margin: 1rem 0;
 }
+style>
+	/* antes */
+	blockquote:before,
+	q:before{
+		content: "<";
+}
+	/* depois */
+	blockquote:after,
+	q:after {
+		content: ">"
+}
+</style>
+
+	<q>Quem não erra, não aprende</q>
+	<q>Quem ensina, aprende em dobro</q>
+
+/*div style="font-size:20px;">
+<p style="font-size: 3em;">O tamanho da fonte deste paragrafo é proporcional ao tamanho
+da fonte definition no seu elemento PAI, ou seja (TO BE DONE: COMPLETAR)*/
+
+    
+   /*table
+        border-collapse:collapse; /*determina se as bordas da tabela serão
+        individualizadas (separate ou compartilhadas (collapse)
+        border-spanding: 0;/*espaçamento entre as bordas: 0*/  
+        
+    /* : -> pseudo-classe
+    blockquote:before -> antes do elemento blockquote
+    blockquote:after -> depois do elementos blockquote
+    existem muitas pseudo-classe*/
+

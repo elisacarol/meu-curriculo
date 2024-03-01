@@ -46,3 +46,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+/*table
+        border-collapse:collapse; /*determina se as bordas da tabela serão
+        individualizadas (separate ou compartilhadas (collapse)
+        border-spanding: 0;/*espaçamento entre as bordas: 0*/  
+        
+    /* : -> pseudo-classe
+    blockquote:before -> antes do elemento blockquote
+    blockquote:after -> depois do elementos blockquote
+    existem muitas pseudo-classe
