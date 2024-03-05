@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Elisa Carolina de Souza</h1>
+        <h1 class="nome-curriculo">Elisa Carolina de Souza</h1>
     </header>
 
     <section id="apresentacao">
@@ -74,8 +74,8 @@
         <h2 class="titulo-secao">Idiomas</h2>
 
             <table>
-                <tr>
-                    <th>
+                <tr> <!-- tr: table row (linha de tabela) -->
+                    <th> <!-- th: table heading (titulo de {campo d} tabela) -->
                         Idioma
                     </th>
                     <th>
@@ -84,13 +84,13 @@
                 </tr>
 
                 <tr>
-                    <td>Português (BR)</td>
+                    <td>Português (BR)</td> <!-- td: table data (dado de tabela) -->
                     <td>  Nativo</td>
                 </tr>
 
                 </tr>
                     <td>Inglês</td>
-                    <td>  B1</td>
+                    <td>Intermediario B1</td>
                 </tr>
                 
             </table>
@@ -99,6 +99,11 @@
             <li>Cursos: Business English - Alumni</li>
 
         </section>
+
+
+        <!-- <div style="font-size:20px;;">
+            <p style="font-size: 3em;">O tamanho da fonte deste parágrafo é proporcional ao tamanho da fonte
+                definido no seu elemento PAI, ou seja, a DIV.</p> </div> -->
 
         <section id="Soft-Skills">
             <h2 class="titulo-secao">Soft Skills</h2>
@@ -141,6 +146,7 @@
                 <p> Nesta página, apesar de não ficar visível para o usuário, a
                 estrutura do HTML segue um padrão semântico em que </p>>
                     <span class="continue-lendo"><a href="#"> Continue lendo</a></span>
+                    <!-- #id -> ancoramento-->
                      
 
                 </article>
@@ -148,31 +154,52 @@
                 <article>
                 <header>
                     <h1>Quando cai o VT?</h1>
-                    <h2>Gerenciando suas pr´oprias expectatitvas</h2>
+                    <h2>Gerenciando suas proprias expectatitvas</h2>
                     <span class="autor">João Marcos</span>
-                    <span class="data">1o mar 24</apan>
+                    <span class="data">1o mar 24</span>
                 <header>
 
                     <p>Aprendendo a gerenciar as expectativas e a ansiedade enquanto
                     aguardamos o tão esperado momento quando ....</p>
                     <span class="continu-lendo"><a href="#softskills">Continue lendo</a></span>
-                <article>
-                    <!--Copiar linhas:
-                    1o selecione as linhas a serem copiadas
-                    2o segure a tecla Alt + shift + l-->
-
                 </article>
-            </article>
+                   
             <article>
             <header>
                 <h1>Sextou, familia</h1>
                 <h2>A dúvida é se tem happy hour com VT</h2>
                 <span class="autor">João Marcos</span>
-                <span class="data">1o mar wo24</span>
+                <span class="data">1o mar 24</span>
             <header>
 
-                <p>Aprendendo a gerenciar as expectativas e a ansiedade enquanto
-                aguardamos o tão esperado momento quando ....</p>
+                <p>Lorem ipsum dolor sit amet consectetur aipisicing elit. Libero molestias distinctio
+                debitis assumenda velit harum nisi....</p>
                 <span class="continue-lendo"><a href="#softskills">Continue lendo</a></span>
             </article>
-        
+                     <!--Copiar linhas:
+                    1o selecione as linhas a serem copiadas
+                    2o segure a tecla Alt + shift + l-->
+
+            <style>
+                /*antes*/
+                blockquote:before,
+                q:before {
+                    content: '<';
+                }
+
+                /*depois*/
+                blockquote:after,
+                q:after {
+                    content: '>';
+                }
+
+            </style>
+
+            <!-- <q> Quem não erra , não aprende </q>
+                <q>quem ensina, aprende em dobro</q> -->
+
+        </section>
+
+    </body>
+
+    </html>
