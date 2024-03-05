@@ -49,58 +49,94 @@ section {
 } 
 
 section#apresentacao {
-    background-color: lightsalmon;
+    background-color: hsl(17, 100%, 74%);
 }
 
 section#formacao-academica {
-    background-color: lightgoldenrodyellow;
+    background-color: hsl(60, 80%, 90%);
 }
 
 section#experiencia-profissional {
-    background-color: lightblue
+    background-color: hsl(195, 53%, 79%)
 }
 
 section#Hard-Skills {
-    background-color: pink;
+    background-color: hsl(350, 100%, 88%);
 }
 
 section#Idiomas {
-    background-color: aqua;
+    background-color: hsla(180, 100%, 50%, 0.493);
 }
 
 section#Soft-Skills {
-    background-color: burlywood;    
+    background-color: hwb(34 53% 13% / 0.84);    
 }
 
 section#Informacoes-Complementares {
-    background-color: /blanchedalmond;
+    background-color: hsla(36, 100%, 90%, 0.822);
 }
 
 section#teconologias {
+    background-color: hsla(180, 100%, 50%, 0.635);
     display: flex;/*exibe como caixa flexivel (Flexbox)*/
     /*Flexbox tem várias atividades que propriedades que trabalham junto*/
     /*display: flex -> sempre aplicado no  elemento PAI (container)*/
-    justify-content:space-evenly;/*alinha o conteudo no eixo principal*/
+    justify-content:space-between;/*alinha o conteudo somente entre os elementos*/
 }
+
+/* TO DO (aula 05
+1. estilizar as demais seçoes
+2. estilizar elementos article
+3. tirar as sombras do texto*/
 
 /*Combinadores*/ 
 
 article h1 {/* h1 descendente de article */
     font-size: 2rem;
     font-weight: bold; /* bold= 700 */
+    margin: 0 0 1rem 0;
+
 }
 
 article h2 {/* h2 descendente de article */
     font-size: 1.5rem;
     font-weight: 600; /*demi-b0ld (quase negrito)*/
+    margin: 0 0 1rem 0;
 }
 
+.autor {
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 80%;
+}
+
+.data {
+    font-style: oblique;
+    font-size: 80%;
+    
+} 
+.continue-lendo{
+    background-color: aqua;
+    padding-left: .5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+.continue-lendo a{
+    color:aliceblue;
+    text-decoration: none;
+}
+    
 article p {
     text-align: justify;
+    margin-bottom: 1rem;
 }
 
 article {
     width: 30%;/* 30% do PAI (section id=*tecnologias*)*/
+    background-color: bisque;
+    
+
 }
 
 .titulo-secao{
