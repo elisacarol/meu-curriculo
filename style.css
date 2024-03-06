@@ -29,6 +29,9 @@ exemplo: line-height, aspecto-ratio, font-weight*/
 :root { /* root -> todos os elementos raiz (HTML), mais alta hierarquia*/
     font-size: 16px;/*tamanho base do rm -> 1 rem = 16px*/
     scroll-behavior: smooth;/*comportamento de rolagem: suave*/
+    --cor-primaria-texto:#353535; /*cria-se uma VARIÁVEL para atribuir a cor*/
+    --cor-fundos-tags;
+    --padding-padrao-secao:
 }
 
 body {   
@@ -44,11 +47,12 @@ body {
     font-family: "Overpass",sans-serif;
     font-size:3rem;
     margin: 2rem 1rem 3rem 4rem; /* shorthand para margi-top margin-right margin-bottom margin-left*/
-
+    color: var(--cor-primaria-texto); /*cor foi criada em root para ser aplicada nos diferentes 
+    títulos*/
 }
 
 section {
-    padding:40px; /*preenchimento {interno} */
+    padding:40px 0; /*preenchimento {interno} */
 } 
 
 #apresentacao {
@@ -60,7 +64,7 @@ section {
 }
 
 #experiencia-profissional {
-    background-color: hsl(195, 53%, 79%)
+    background-color: hsl(195, 53%, 79%);
 }
 
 #Hard-Skills {
@@ -72,7 +76,7 @@ section {
 }
 
 #Soft-Skills {
-    background-color: hwb(34 53% 13% / 0.84);    
+    background-color: hsla(34, 57%, 70%, 0.84);    
 }
 
 #Informacoes-Complementares {
@@ -89,6 +93,20 @@ section {
     /*alinha o conteudo somente entre os elementos*/
 }
 
+
+#Apresentacoo, 
+#Formacao-Academica, 
+#experiencia-profissional, 
+#Hard-Skills,
+#Idiomas,
+#Soft-Skills,
+#Informacoes-Complementares,
+#tecnologia{
+    padding: 40px; /*para não repetir os comandos para cada titulo/componente
+     da lista e criar uma regra para todas as seçoes, listar todas as seções e inserir os
+     atributos*/
+    
+}  
 /* TO DO (aula 05
 1. estilizar as demais seçoes
 2. estilizar elementos article
@@ -125,17 +143,17 @@ article h2 {/* h2 descendente de article */
     padding-left: .5rem 1rem;
     margin-top: 1rem;
     border-radius: 8px;
-}
-
-.continue-lendo a{
-    color:#ffffff;
-    text-decoration: none;
+    color: ffffff;
+    text-decoration:none;
 }
     
 article p {
     text-align: justify;
     margin-bottom: 1rem;
-}
+    height: 19px;
+    overflow: hidden;/*transbordamento escondido - o delimitamento tem que ser definido pela altura ou 
+    largura. O overflow está vinculado. Pode estar ligado ao Scroll = barra de rolagem*/
+}   
 
 article {
     width: 30%;/* 30% do PAI (section id=*tecnologias*)*/
@@ -181,7 +199,8 @@ h1{
     padding: 5px;
     border-radius: 4px;
     margin: 5px;
-}
+    color: var(--cor-primaria-texto
+}   
 
 
 
