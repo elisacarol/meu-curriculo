@@ -79,12 +79,14 @@ section {
     background-color: hsla(36, 100%, 90%, 0.822);
 }
 
-#teconologias {
+#tecnologia {
     background-color: hsla(180, 100%, 50%, 0.635);
-    display: flex;/*exibe como caixa flexivel (Flexbox)*/
+    display: flex;
+    /*exibe como caixa flexivel (Flexbox)*/
     /*Flexbox tem várias atividades que propriedades que trabalham junto*/
     /*display: flex -> sempre aplicado no  elemento PAI (container)*/
-    justify-content:space-between;/*alinha o conteudo somente entre os elementos*/
+    justify-content:space-between;
+    /*alinha o conteudo somente entre os elementos*/
 }
 
 /* TO DO (aula 05
