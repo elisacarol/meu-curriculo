@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-tema="light"> <!--criado o data-tema no index e gerado no style em root e body
+                                        mudará as cores das letras nestes pontos, isto é criou a variável
+                                        que mudará estes elementos-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +11,12 @@
 </head>
 <body>
     <header>
+        
         <h1 class="nome-curriculo">Elisa Carolina de Souza</h1>
     </header>
 
     <section id="apresentacao">
+        <button type="button" id="#btTrocaTema">Trocar tema</button>
         <h2 class="titulo-secao">Apresentação</h2>
 
         <h3>Sobre mim</h3>
@@ -204,7 +208,9 @@
                 <q>quem ensina, aprende em dobro</q> -->
 
         </section>
-
+        <script src="tema.js"></script> 
+        <!--escrever o script com a função bottom antes do body para  para garantir que o arquivo carregou
+        o DOM todo e depois executará as funções do JavaScript-->
     </body>
 
     </html>

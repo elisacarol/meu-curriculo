@@ -30,8 +30,35 @@ exemplo: line-height, aspecto-ratio, font-weight*/
     font-size: 16px;/*tamanho base do rm -> 1 rem = 16px*/
     scroll-behavior: smooth;/*comportamento de rolagem: suave*/
     --cor-primaria-texto:#353535; /*cria-se uma VARIÁVEL para atribuir a cor*/
-    --cor-fundos-tags;
-    --padding-padrao-secao:
+    --cor-fundos-tags: #bebebe;
+    --padding-padrao-secao: 40px;
+
+    /*TEMA:light */
+    --plano-fundo:#ffffff;
+    --cor-primaria-texto:#353535;
+    --cor-fundo-tag: #bebebe;
+
+}
+
+[data-tema="light"]{
+    --plano-fundo:#ffffff;
+    --cor-primaria-texto:#353535;
+    --cor-fundo-tag:#353535;
+    --cor-fundo-apresentacao: magenta;
+    --cor-fundo-formacao-academica: lightblue;
+    --cor-fundo-experiencia-profissional: green;
+    --cor-fundo-Hard-Skills: white;
+    --cor-fundo-Idiomas: blue;
+    --cor-fundo-Soft-Skills: lightblue;
+    --cor-fundo-Informacoes-Complementares: white;
+    --cor-fundo-tecnologia: lightgray;
+    
+}
+
+[data-tema="dark"]{
+    --plano-fundo: #3535335;
+    --cor-primaria-texto:#ffffff;
+    --cor-fundo-tag:#353535;
 }
 
 body {   
@@ -40,6 +67,7 @@ body {
     font-size: 20px;/*o padrão é 16px*/
     font-family: "Architects+Daughter&family", sans-serif;
     font-weight:20px;
+    background-color: var(--plano-fundo);
 }
 
 
@@ -56,7 +84,8 @@ section {
 } 
 
 #apresentacao {
-    background-color: hsl(17, 100%, 74%);
+    background-color: hsl(17, 100%, 74%)
+
 }
 
 #formacao-academica {
